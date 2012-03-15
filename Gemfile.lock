@@ -78,6 +78,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.17.2)
     multi_json (1.1.0)
+    mysql2 (0.3.11)
     netrc (0.7.1)
     orm_adapter (0.0.6)
     paper_trail (2.6.2)
@@ -187,6 +188,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   heroku
   jquery-rails
+  mysql2
   rails (= 3.2.2)
   refinerycms (~> 2.0.0)
   refinerycms-i18n (~> 2.0.0)
