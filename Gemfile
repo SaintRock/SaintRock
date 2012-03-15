@@ -23,6 +23,7 @@ end
 
 group :development do
   gem 'sqlite3'
+  gem 'mysql2'
 end
 
 group :production do

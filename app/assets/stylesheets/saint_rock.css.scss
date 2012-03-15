@@ -2,46 +2,14 @@ body {
   margin: 0;
 }
 
-#body_content {
-  position: relative;
-  #body_content_title {
-    display: none;
-  }
-  h1 {
-    font-size: 24pt;
-  }
-
-  #body {
-    margin-top: 25px;
-    margin-left: 250px;
-    
-    }
-  }
-  #menu {
-    ul {
-      list-style: none;
-      padding-left: 20px;
-    }
-    a {
-      color: rgb(150, 160, 180);
-      text-decoration: none;
-      text-transform:uppercase;
-    }
-  
-  .image-align-left {
-    margin-right: 40px;
-  }
-  #side_body {
-    position: absolute;
-    top: 0;
-    left: 10px;
-    width: 250px;
-    p {
-      color: #777;
-      font-size: 14px;
-    }
-  }
+#page {
+  font-family: Tahoma;
+  font-size: 13px;
+  line-height: 24px;
 }
+
+#side_body_content {
+  float: left;
 
 #sponsor_a_child {
   background: url('/assets/sponsor.gif') no-repeat top left;
@@ -59,6 +27,40 @@ body {
   background: url('/assets/donate.gif') no-repeat top left;
   width: 411px;
   height: 39px;
+}
+}
+
+#body_content {
+  float: left;
+  width: 593px;
+}
+
+#menu {
+
+  ul {
+    list-style: none;
+    padding-left: 20px;
+  }
+  a {
+    color: rgb(150, 160, 180);
+    text-decoration: none;
+    text-transform:uppercase;
+  }
+ 
+  .image-align-left {
+    margin-right: 40px;
+  }
+  #side_body {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 250px;
+    p {
+      color: #777;
+      font-size: 14px;
+    }
+  }
+
 }
 
 #footer {
