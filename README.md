@@ -18,5 +18,5 @@ Technical team from McKinsey & TCS:
 * Yanwing Wong
 * Andrew Ogg
 * [Alex Rothenberg](http://www.alexrothenberg.com/)
-* [Doel Sengupta](http://doelsengupta.blogspot.com/)
+* [DoelSengupta](http://doelsengupta.blogspot.com/)
 * [Pat Shaughnessy](http://patshaughnessy.net)
