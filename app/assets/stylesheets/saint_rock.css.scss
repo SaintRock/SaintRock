@@ -30,6 +30,24 @@ body {
 }
 }
 
+.header-overlap-image1 {
+  background: url('/assets/overlap1.jpg') no-repeat top left;
+  width: 482px;
+  height: 253px;
+  left: -21px;
+  top: -92px;
+  position: relative;
+}
+
+.header-overlap-image2 {
+  background: url('/assets/overlap2.jpg') no-repeat top left;
+  width: 482px;
+  height: 253px;
+  left: -21px;
+  top: -92px;
+  position: relative;
+}
+
 #body_content {
   float: left;
   width: 593px;
