@@ -60,3 +60,18 @@ body {
   width: 411px;
   height: 39px;
 }
+
+#footer {
+  #footer-left {
+    background: url('/assets/layout_29.gif') top left;
+    width: 641px;
+    height: 111px;
+    float: left;
+  }
+  #footer-right {
+    background: url('/assets/layout_32.gif') top left;
+    width: 363px;
+    height: 111px;
+    float: left;
+  }
+}
