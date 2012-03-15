@@ -1,0 +1,27 @@
+#body_content {
+  position: relative;
+  #body_content_title {
+    display: none;
+  }
+  h1 {
+    font-size: 24pt;
+  }
+
+  #body {
+    margin-top: 25px;
+    margin-left: 250px;
+  }
+  .image-align-left {
+    margin-right: 40px;
+  }
+  #side_body {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 250px;
+    p {
+      color: #777;
+      font-size: 14px;
+    }
+  }
+}
