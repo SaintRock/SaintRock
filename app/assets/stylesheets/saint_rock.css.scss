@@ -10,7 +10,20 @@
   #body {
     margin-top: 25px;
     margin-left: 250px;
+    
+    }
   }
+  #menu {
+    ul {
+      list-style: none;
+      padding-left: 20px;
+    }
+    a {
+      color: rgb(150, 160, 180);
+      text-decoration: none;
+      text-transform:uppercase;
+    }
+  
   .image-align-left {
     margin-right: 40px;
   }
