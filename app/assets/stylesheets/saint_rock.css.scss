@@ -2,29 +2,41 @@ body {
   margin: 0;
 }
 
-header {
-  float: left;
-}
-
-section#page {
-  width: 593px;
-  float: left;
+#page {
   font-family: Tahoma;
   font-size: 13px;
   line-height: 24px;
 }
 
+#side_body_content {
+  float: left;
+
+#sponsor_a_child {
+  background: url('/assets/sponsor.gif') no-repeat top left;
+  width: 411px;
+  height: 39px;
+}
+
+#photo_gallery {
+  background: url('/assets/photogallery.gif') no-repeat top left;
+  width: 411px;
+  height: 39px;
+}
+
+#make_a_donation {
+  background: url('/assets/donate.gif') no-repeat top left;
+  width: 411px;
+  height: 39px;
+}
+}
+
 #body_content {
-  position: relative;
-  #body_content_title {
-    display: none;
-  }
-  h1 {
-    font-size: 24pt;
-  }
+  float: left;
+  width: 593px;
 }
 
 #menu {
+
   ul {
     list-style: none;
     padding-left: 20px;
@@ -48,24 +60,7 @@ section#page {
       font-size: 14px;
     }
   }
-}
 
-#sponsor_a_child {
-  background: url('/assets/sponsor.gif') no-repeat top left;
-  width: 411px;
-  height: 39px;
-}
-
-#photo_gallery {
-  background: url('/assets/photogallery.gif') no-repeat top left;
-  width: 411px;
-  height: 39px;
-}
-
-#make_a_donation {
-  background: url('/assets/donate.gif') no-repeat top left;
-  width: 411px;
-  height: 39px;
 }
 
 #footer {
