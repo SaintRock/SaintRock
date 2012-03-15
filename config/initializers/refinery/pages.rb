@@ -5,8 +5,8 @@ Refinery::Pages.configure do |config|
   # end
 
   # Configure global page default parts
-  # config.default_parts = ["Body", "Side Body"]
-
+   config.default_parts = ["Body", "Side Body", "News", "Services", "Banner"]
+    config.new_page_parts = true
   # Configure how many pages per page should be displayed when a dialog is presented that contains a links to pages
   # config.pages_per_dialog = 14
 
