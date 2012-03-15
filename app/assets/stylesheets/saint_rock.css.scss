@@ -74,4 +74,17 @@ body {
     height: 111px;
     float: left;
   }
+  #footer-links {
+    position: relative;
+    left: 24px;
+    top:  44px;
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #C0C0C0;
+  }
+
+  a {
+    text-decoration:none;
+    color: #C0C0C0;
+  }
 }
