@@ -1,0 +1,24 @@
+<div id="rotate-frame">
+  <div id="rotate-arrow-left">
+    <%= image_tag 'arrow-left.png', :id => 'rotate-left-arrow' %>
+  </div>
+  <div id="wrapper">
+    <div id="mask" style="width: <%= 13*3*268 %>px">
+      <% 3.times do %>
+        <% @page.image_pages.each_with_index do |gallery_image, index| %>
+          <div class="gallery-image">
+            <%= image_tag(gallery_image.image.thumbnail("200x200#c").url) %>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+  <div id="rotate-arrow-right">
+    <%= image_tag 'arrow-right.png', :id => 'rotate-right-arrow' %>
+  </div>
+  <div class="clear"></div>
+</div>
+
+<script>
+  var gallery_count = <%= @page.image_pages.size %>
+</script>

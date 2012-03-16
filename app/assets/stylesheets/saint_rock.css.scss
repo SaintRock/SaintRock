@@ -115,3 +115,44 @@ body {
     color: #C0C0C0;
   }
 }
+
+#rotate-frame {
+  width: 593px;
+  padding: 0 0 20px 10px;
+}
+
+
+#wrapper {
+  float: left;
+  width: 536px;
+  height: 242px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+ 
+#rotate-arrow-left {
+  float: left;
+  width: 18px;
+  margin-top: 86px;
+}
+
+#rotate-arrow-right {
+  float: left;
+  width: 18px;
+  margin-top: 86px;
+}
+
+.gallery-image {
+  float: left;
+  width: 244px;
+  height: 218px;
+  font-size: 11pt;
+  margin: 5px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border: 7px solid #DDD;
+  background-color: #DDD;
+}
+

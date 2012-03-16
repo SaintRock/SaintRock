@@ -1,14 +1,6 @@
-<%= render '/sidebar' %>
+<%= render 'shared/sidebar' %>
 <section id='body_content'>
   <div class="<%= overlap_class(@page) %>"></div>
   <%=raw @page.content_for(:body) %>
-
-    <ul id='gallery'>
-      <% @page.image_pages.each do |i| %>
-        <li>
-          <%= link_to image_tag(i.image.thumbnail("200x200#c").url), i.image.thumbnail("900x600").url %>
-          <%= raw i.caption %>
-        </li>
-      <% end %>
-    </ul>
+  <%= render 'shared/gallery' if @page.content_for(:PhotoGallery) %>
 </section>
