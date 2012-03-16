@@ -1,5 +1,8 @@
+<% @page.title = '' %>
 <%= render '/sidebar' %>
 <section id='body_content'>
   <div class="<%= overlap_class(@page) %>"></div>
-  <%= render '/refinery/content_page' %>
+  <div id="home-page">
+    <%= render '/refinery/content_page' %>
+  </div>
 </section>

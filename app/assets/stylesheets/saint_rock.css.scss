@@ -8,6 +8,23 @@ body {
   line-height: 24px;
 }
 
+#home-page {
+  line-height: 16px;
+  font-family: Verdana;
+  color: #333;
+
+  .image-left {
+    float: left;
+    width: 130px;
+    font-family: Tahoma;
+  }
+
+  .blue-header {
+    font-weight: 700;
+    color: #009999;
+  }
+}
+
 #side_body_content {
   float: left;
 
