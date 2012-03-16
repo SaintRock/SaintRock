@@ -11,23 +11,13 @@ body {
 #side_body_content {
   float: left;
 
-#sponsor_a_child {
-  background: url('/assets/sponsor.gif') no-repeat top left;
-  width: 411px;
-  height: 39px;
-}
-
-#photo_gallery {
-  background: url('/assets/photogallery.gif') no-repeat top left;
-  width: 411px;
-  height: 39px;
-}
-
-#make_a_donation {
-  background: url('/assets/donate.gif') no-repeat top left;
-  width: 411px;
-  height: 39px;
-}
+  #sponsor_a_child, #photo_gallery, #make_a_donation {
+    img {
+      width: 411px;
+      height: 39px;
+      display: block;
+    }
+  }
 }
 
 .header-overlap-image1 {
