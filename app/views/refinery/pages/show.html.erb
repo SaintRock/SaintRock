@@ -1,15 +1,4 @@
-<section id='side_body_content'>
-  <%= render(:partial => "/refinery/menu", :locals => {
-               :dom_id => 'menu',
-               :css => 'menu'
-  }) %>
-  <%= link_to image_tag('sponsor.gif'),      page_path(:sponsor),        :id=>:sponsor_a_child %>
-  <%= link_to image_tag('photogallery.gif'), page_path('photo-gallery'), :id=>:photo_gallery %>
-  <%= link_to image_tag('donate.gif'),       page_path(:donate),         :id=>:make_a_donation %>
-
-  <%=raw @page.content_for(:side_body) %>
-</section>
-
+<%= render '/sidebar' %>
 <section id='body_content'>
   <div class="<%= overlap_class(@page) %>"></div>
   <%=raw @page.content_for(:body) %>
