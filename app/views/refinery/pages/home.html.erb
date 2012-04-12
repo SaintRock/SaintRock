@@ -3,6 +3,6 @@
 <section id='body_content'>
   <div class="<%= overlap_class(@page) %>"></div>
   <div id="home-page">
-    <%= render '/refinery/content_page' %>
+    <%= render_content_page(@page, { :hide_sections => :side_body, :can_use_fallback => true }) %>
   </div>
-</section>
+  </section>
