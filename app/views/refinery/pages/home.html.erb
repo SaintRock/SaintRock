@@ -3,6 +3,57 @@
 <section id='body_content'>
   <div class="<%= overlap_class(@page) %>"></div>
   <div id="home-page">
-    <%= render_content_page(@page, { :hide_sections => :side_body, :can_use_fallback => true }) %>
+    <p><%= image_tag('welcome-to-our-foundation.gif') %></p>
+    <%=raw @page.content_for(:welcome) %>
+    <p><%= image_tag('latest-news.gif') %></p>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td valign="top">
+          <%=raw @page.content_for(:news) %>
+        </td>
+        <td valign="top"><paypal button="add_cart" info="www.transmitmedia.com/golive/paypal"></paypal>
+         &nbsp;
+         <paypal button="add_cart" info="www.transmitmedia.com/golive/paypal"><a href="#" onclick="window.open('https://www.paypal.com/cart/add=1&amp;bn=tm_gl_2.0&amp;currency_code=USD&amp;business=saintrockhaiti@gmail.com&amp;item_name=Gala Auction &amp; Reverse Raffle&amp;item_number=111-GALA&amp;amount=100.00&amp;image_url=http://www.saintrock.org/paypallogo.jpg&amp;undefined_quantity=1&amp;no_shipping=0&amp;no_note=0&amp;return=http://www.saintrock.org/thankyou.html&amp;cancel_return=http://www.saintrock.org/index.html','paypal','width=600,height=400,scrollbars,location,resizable,status');"><img src="http://images.paypal.com/images/sc-but-03.gif" border="0"></a><br>
+         </paypal>
+        </td>
+       </tr>
+     </table>
+    <p><%= image_tag('services.jpg') %></p>
+    <div class="image-left">
+      <%= image_tag('dentist2_icon.jpg') %>
+      <%=raw @page.content_for(:services1) %>
+    </div>
+    <div class="image-left">
+      <%= image_tag('baby_icon.jpg') %>
+      <%=raw @page.content_for(:services2) %>
+    </div>
+    <div class="image-left">
+      <%= image_tag('goat_w_borderIcon.jpg') %>
+      <%=raw @page.content_for(:services3) %>
+    </div>
+    <div class="image-left">
+      <%= image_tag('loan_icon.JPG') %>
+      <%=raw @page.content_for(:services4) %>
+    </div>
   </div>
-  </section>
+  <div id="donate-form">
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="saintrockhaiti@gmail.com">
+      <input type="hidden" name="item_name" value="Donation to support the wonderful work of the foundation in Saint Rock, Haiti">
+      <input type="hidden" name="no_shipping" value="0">
+      <input type="hidden" name="no_note" value="1">
+      <input type="hidden" name="currency_code" value="USD">
+      <input type="hidden" name="tax" value="0">
+      <input type="hidden" name="lc" value="US">
+      <input type="hidden" name="bn" value="PP-DonationsBF">
+      <p style="margin-top: 0; margin-bottom: 4px"> <span class="maintext"><font face="Tahoma" style="font-size: 12px">You can donate to us online conveniently and securely via PayPal using a credit card
+      </font></span></p>
+      <p style="margin-top: 0; margin-bottom: 4px">
+      <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+      <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1"></p>
+    </form>
+  </div>
+  <p class="maintext2">We are grateful to&nbsp;<a href="http://www.wesslingarchitects.com/splash.htm">Wessling Architects</a>&nbsp;for their support in organizing the 2012 Gala.</p>
+  <p class="maintext2" lign=""><a href="http://www.wesslingarchitects.com/splash.htm"><img src="http://www.wesslingarchitects.com/wa-logo%20small.jpg" alt="Wessling Architechs" border="0"></a></p>
+</section>

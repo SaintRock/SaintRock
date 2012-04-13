@@ -7,5 +7,9 @@
   <%= link_to image_tag('photogallery.gif'), page_path('photo-gallery'), :id=>:photo_gallery %>
   <%= link_to image_tag('donate.gif'),       page_path(:donate),         :id=>:make_a_donation %>
 
-  <%=raw @page.content_for(:side_body) %>
+  <div id="lower-text-area">
+    <%= link_to image_tag('aboutus.jpeg'), page_path('about-us') %>
+    <%=raw @page.content_for(:side_body) %>
+    <%= link_to image_tag('learn-more.gif'), page_path('about-us') %>
+  </div>
 </section>
