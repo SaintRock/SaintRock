@@ -8,8 +8,9 @@
   <%= link_to image_tag('donate.gif'),       page_path(:donate),         :id=>:make_a_donation %>
 
   <div id="lower-text-area">
-    <%= link_to image_tag('aboutus.jpeg'), page_path('about-us') %>
+    <% home_page = (@page.slug == 'home') %>
+    <%= link_to(image_tag('aboutus.jpeg'), page_path('about-us')) if home_page %>
     <%=raw @page.content_for(:side_body) %>
-    <%= link_to image_tag('learn-more.gif'), page_path('about-us') %>
+    <%= link_to image_tag('learn-more.gif'), page_path('about-us') if home_page %>
   </div>
 </section>
