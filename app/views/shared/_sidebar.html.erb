@@ -3,14 +3,14 @@
                :dom_id => 'menu',
                :css => 'menu'
   }) %>
-  <%= link_to image_tag('sponsor.gif'),      page_path(:sponsor),        :id=>:sponsor_a_child %>
-  <%= link_to image_tag('photogallery.gif'), page_path('photo-gallery'), :id=>:photo_gallery %>
-  <%= link_to image_tag('donate.gif'),       page_path(:donate),         :id=>:make_a_donation %>
+  <%= link_to image_tag('sponsor.gif'),      'sponsor',        :id=>:sponsor_a_child %>
+  <%= link_to image_tag('photogallery.gif'), 'photo-gallery',  :id=>:photo_gallery %>
+  <%= link_to image_tag('donate.gif'),       'donate',         :id=>:make_a_donation %>
 
   <div id="lower-text-area">
     <% home_page = (@page.slug == 'home') %>
-    <%= link_to(image_tag('aboutus.jpeg'), page_path('about-us')) if home_page %>
+    <%= link_to(image_tag('aboutus.jpeg'), 'about-us') if home_page %>
     <%=raw @page.content_for(:side_body) %>
-    <%= link_to image_tag('learn-more.gif'), page_path('about-us') if home_page %>
+    <%= link_to(image_tag('learn-more.gif'), 'about-us') if home_page %>
   </div>
 </section>

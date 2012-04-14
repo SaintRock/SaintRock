@@ -3,4 +3,6 @@
   <div class="<%= overlap_class(@page) %>"></div>
   <%=raw @page.content_for(:body) %>
   <%= render 'shared/gallery' if @page.content_for(:PhotoGallery) %>
+  <%= render 'shared/sponsor' if @page.content_for(:SponsorChild) %>
+  <%= render 'shared/donate'  if @page.content_for(:Donate) %>
 </section>
