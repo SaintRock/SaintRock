@@ -5,15 +5,15 @@ function scroll_scaffolds(delta, speed) {
 }
 $(document).ready(function() {
   $('#rotate-arrow-left').click(function () {
-    if (selected <= 3) {
+    if (selected <= 2) {
       scroll_scaffolds(gallery_count, 0);
     }
-    scroll_scaffolds(-3, 500);
+    scroll_scaffolds(-2, 500);
   })
   $('#rotate-arrow-right').click(function () {
-    if (selected >= gallery_count*2 - 3) {
+    if (selected >= gallery_count*2 - 2) {
       scroll_scaffolds(-gallery_count, 0);
     }
-    scroll_scaffolds(3, 500);
+    scroll_scaffolds(2, 500);
   })
 })

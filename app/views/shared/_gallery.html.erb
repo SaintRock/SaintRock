@@ -7,7 +7,7 @@
       <% 3.times do %>
         <% @page.image_pages.each_with_index do |gallery_image, index| %>
           <div class="gallery-image">
-            <%= image_tag(gallery_image.image.thumbnail("240x218#c").url) %>
+            <%= image_tag(gallery_image.image.thumbnail("243x218#c").url) %>
           </div>
         <% end %>
       <% end %>
