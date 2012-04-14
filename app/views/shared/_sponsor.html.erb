@@ -1,8 +1,9 @@
 <% @page.image_pages.each_with_index do |sponsor_child_image, index| %>
   <div class="sponsor-child-image">
-    <%= image_tag(sponsor_child_image.image.url) %>
+    <%= image_tag(sponsor_child_image.image.url) %><br/>
+    <div class="sponsor-child-id">
+      <%= sponsor_child_image.image.image_name.gsub(/CSR[0-9]+/).first %>
+    </div>
   </div>
 <% end %>
 <div style="clear: left;"></div>
-XX
-
