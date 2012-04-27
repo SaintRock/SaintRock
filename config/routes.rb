@@ -1,6 +1,7 @@
 SaintRock::Application.routes.draw do
 
   get "donations/create"
+  get "sponsor_inquiries/create_sponsor_inquiry"
 
   # This line mounts Refinery's routes at the root of your application.
   # This means, any requests to the root URL of your application will go to Refinery::PagesController#home.
@@ -9,7 +10,8 @@ SaintRock::Application.routes.draw do
   # We ask that you don't use the :as option here, as Refinery relies on it being the default of "refinery"
   mount Refinery::Core::Engine, :at => '/'
 
-  resources :donations, :only => [:create]
+  resources :donations,         :only => [:create]
+  resources :sponsor_inquiries, :only => [:create]
 
   # Keep in mind you can assign values other than :controller and :action
 
