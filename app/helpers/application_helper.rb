@@ -1,7 +1,6 @@
 module ApplicationHelper
 
   def overlap_class(page)
-    puts "DEBUG #{page.slug}"
     case page.slug
     when 'home'
       'header-overlap-image1'

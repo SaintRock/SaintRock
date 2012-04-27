@@ -1,7 +1,7 @@
 class DonationsController < ApplicationController
 
   def create
-    puts "DEBUG: params #{params.inspect}"
+    DonationMailer.donation_message(params).deliver
     redirect_to '/', :notice => 'Thank you for your donation!'
   end
 end
