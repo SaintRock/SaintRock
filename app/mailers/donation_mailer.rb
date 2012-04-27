@@ -12,6 +12,7 @@ class DonationMailer < ActionMailer::Base
     @prov_or_state = params['ProvState']
     @postal_code = params['PostalCode']
     @note = params['S1']
+    @recurring_donation = (params['Recurring_Donation'] == 'ON' ? 'YES' : 'NO' )
     mail(:to => 'pat@patshaughnessy.net', :subject => 'New pledge on SaintRock.org!')
   end
   
