@@ -12,7 +12,7 @@ class DonationMailer < ActionMailer::Base
     @prov_or_state = params['ProvState']
     @postal_code = params['PostalCode']
     @note = params['S1']
-    mail(:to => 'pat@patshaughnessy.net')
+    mail(:to => 'pat@patshaughnessy.net', :subject => 'New pledge on SaintRock.org!')
   end
   
 end
