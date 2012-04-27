@@ -2,6 +2,11 @@
 <%= render 'shared/sidebar' %>
 <section id='body_content'>
   <div class="<%= overlap_class(@page) %>"></div>
+  <div id="flash">
+    <% flash.each do |key, value| -%>
+      <div id="flash_<%= key %>"><%=h value %></div>
+    <% end -%>
+  </div>
   <div id="home-page">
     <p><%= image_tag('welcome-to-our-foundation.gif') %></p>
     <%=raw @page.content_for(:welcome) %>

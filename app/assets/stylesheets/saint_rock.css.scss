@@ -180,3 +180,13 @@ body {
   margin-left: 72px;
   margin-bottom: 15px;
 }
+
+#flash_notice {
+  background-color: rgb(163, 174, 116);
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border: 7px solid rgb(163, 174, 116);
+  margin: 30px;
+  font-family: Verdana;
+  color: #333;
+}

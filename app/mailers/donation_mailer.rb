@@ -1,5 +1,5 @@
 class DonationMailer < ActionMailer::Base
-  default from: "from@example.com"
+  default from: "do-not-reply@saintrock.org"
 
   def donation_message(params)
     @amount = params['PLEDGE_AMOUNT']
